@@ -51,6 +51,14 @@ X = np.vstack([digits.data[digits.target == i] for i in range(10)])
 y = np.hstack([digits.target[digits == i] for i in range(10)])
 digits_proj = TSNE(random_state=RS).fit_transform(X)
 
+# 显示转换后数据集的函数
+def scatter(x,colors):
+    # 我们使用seaborn中的调色板
+    palette = np.array(sns.color_palette('hls',10))
+
+    f=plt.figure(figsize=(8,8))
+    ax=plt.subplot(aspect='equal')
+    sc=ax.scatter(x[:,0],x[:,1],lw=0,s=40,c=palette[colors.astype(np.int)])
 
 
 
