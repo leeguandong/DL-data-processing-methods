@@ -1,0 +1,10 @@
+数据处理，是在numpy之上的一层封装
+
+pandas核心结构 DataFrame 可以理解成一种矩阵结构
+object str类型
+int64
+float32
+
+Series结构：是DataFrame里面的行或者列，是分解结构
+
+DataFrame里面结构是Serises，Series里面的结构是ndarray
