@@ -82,4 +82,3 @@ def not_null_count(column):
 column_null_count = titanic_survival.apply(not_null_count)
 print(column_null_count)
 
-#
