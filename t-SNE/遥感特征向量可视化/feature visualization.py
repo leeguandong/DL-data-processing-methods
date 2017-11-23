@@ -7,6 +7,7 @@ for i in range(100):
         df = pd.read_table('agricultural/agricultural0' + str(i) + '.jpg.txt')
         print('-----')
         print(df.shape)
+        print()
     else:
         df = pd.read_table('agricultural/agricultural' + str(i) + '.jpg.txt')
         print('*******')
@@ -22,6 +23,5 @@ X = X.reshape((100, 2048))
 print(X.shape)
 # print(feature.shape)
 # X = np.array(feature)
-
 
 # print(X)

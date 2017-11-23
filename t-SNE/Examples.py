@@ -8,6 +8,7 @@ X_embedded = TSNE(n_components=2).fit_transform(X)
 print(X_embedded)
 x = X_embedded[:, 0]
 y = X_embedded[:, 1]
+z = X_embedded[:,2]
 print(x, y)
 ax = sns.stripplot(x=x, y=y)
 plt.show()
