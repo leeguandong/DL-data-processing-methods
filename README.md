@@ -1,9 +1,6 @@
-# Deep learning data processing methods
+# Visualization
 
-关于深度学习数据处理的一些基本操作
+这是我的可视化学习笔记
 
-包括： 数据增强措施
-       可视化
-       数据读取与输入
-       。。。。。
+一直都想学一下可视化这块的知识，包括论文经常要用
 
