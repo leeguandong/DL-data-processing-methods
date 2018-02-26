@@ -27,6 +27,7 @@ print(len(X[0]))
 print(X)
 
 style_label_file = 'style_names'
+# style_label_file = style_label_file.encode('utf-8')
 
 style_labels = list(np.loadtxt(style_label_file, str, delimiter='\n'))
 print(style_labels)
