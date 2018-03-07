@@ -2,7 +2,6 @@ from keras.layers import Input,Dense
 from keras.models import Model
 from keras.datasets import mnist
 from keras.utils import np_utils
-import numpy as np
 
 (data,labels),(x_test,y_test) = mnist.load_data()
 
@@ -24,3 +23,15 @@ model.compile(optimizer='rmsprop',
               metrics=['accuracy'])
 model.fit(x_train, y_train)  # starts training
 model.summary()
+
+from keras.layers import TimeDistributed
+
+# Input tensor for sequences of 20 timesteps, each containing a 784-dimensional vector
+input_sequences = Input(shape=(20, 784))
+
+# This applies our previous model to every timestep in the input sequences.
+# the output of the previous model was a 10-way softmax, so the output of the layer below will be a sequence of 20 vectors of size 10.
+processed_sequences = TimeDistributed(model)(input_sequences)
+
+
+

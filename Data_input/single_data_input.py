@@ -8,7 +8,7 @@ import os
 # 忽略硬件加速的警告信息
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-file_path = 'images/0a70f64352edfef4c82c22015f0e3a20.jpg'
+file_path = 'images/glasses.png'
 
 img = image.load_img(file_path, target_size=(224, 224))
 x = image.img_to_array(img)
