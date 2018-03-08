@@ -36,6 +36,9 @@ model.compile(optimizer='rmsprop',
               metrics=['accuracy'])
 model.fit([data_a, data_b], labels, epochs=10)
 
+keras.layers.add()
+keras.layers.concatenate()
+
 '''
 __________________________________________________________________________________________________
 Layer (type)                    Output Shape         Param #     Connected to
