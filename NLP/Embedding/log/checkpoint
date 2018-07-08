@@ -1,0 +1,2 @@
+model_checkpoint_path: "F:\\Github\\DL-data-processing-methods\\NLP\\Embedding\\log\\model.ckpt"
+all_model_checkpoint_paths: "F:\\Github\\DL-data-processing-methods\\NLP\\Embedding\\log\\model.ckpt"

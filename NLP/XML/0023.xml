@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<GateDocument>
+  <GateDocumentFeatures>
+    <Feature>
+      <Name className="java.lang.String">gate.SourceURL</Name>
+      <Value className="java.lang.String">file:/</Value>
+    </Feature>
+    <Feature>
+      <Name className="java.lang.String">docNewLineType</Name>
+      <Value className="java.lang.String" />
+    </Feature>
+    <Feature>
+      <Name className="java.lang.String">MimeType</Name>
+      <Value className="java.lang.String">text/plain</Value>
+    </Feature>
+  </GateDocumentFeatures>
+  <TextWithNodes>
+    <Node id="0" />安吉县<Node id="3" />是<Node id="4" />浙江省<Node id="7" />湖州市<Node id="10" />属县，<Node id="13" />中国<Node id="15" />著名毛竹产区，<Node id="22" />浙江省<Node id="25" />林业重点县之一。<Node id="33" />安吉县<Node id="36" />位于<Node id="38" />杭州市<Node id="41" />西北，邻<Node id="45" />安徽省<Node id="48" />。<Node id="49" />安吉县<Node id="52" />面积 1882 平方公里，人口43.52万。<Node id="74" />安吉县<Node id="77" />县府驻<Node id="80" />递铺镇<Node id="83" />。<Node id="84" />安吉县<Node id="87" />东汉置<Node id="90" />安吉县<Node id="93" />。<Node id="94" />安吉县<Node id="97" />1958年<Node id="102" />孝丰县<Node id="105" />并入。<Node id="108" />安吉县<Node id="111" />县境位于<Node id="115" />天目山<Node id="118" />北麓，<Node id="121" />西苕溪<Node id="124" />纵贯县境，盛产林木，毛竹占1/3以上，居全省首位，为国家提供的商品竹约占全国的1/10。<Node id="168" />安吉县<Node id="171" />素有 “竹乡”之称。<Node id="181" />安吉县<Node id="184" />近年漆树发展较快，已成为全国生漆生产基地县之一。<Node id="208" />安吉县<Node id="211" />特产有笋干、茶叶、板栗等。<Node id="224" />安吉县<Node id="227" />电力、造纸、建材工业有一定基础。<Node id="243" />安吉县<Node id="246" />县境中部的<Node id="251" />孝丰镇<Node id="254" />原为<Node id="256" />孝丰县<Node id="259" />治，地处<Node id="263" />西苕溪<Node id="266" />上游，为<Node id="270" />浙西<Node id="272" />著名山城。<Node id="277" />安吉县<Node id="280" />西南<Node id="282" />龙王山<Node id="285" />辟有<Node id="287" />龙王山自然保护区<Node id="295" />。<Node id="296" />安吉县<Node id="299" />章吴村<Node id="302" />有近代书画艺术家<Node id="310" />吴昌硕故居<Node id="315" />。<Node id="316" /></TextWithNodes>
+  <AnnotationSet>
+    <Annotation Id="1" Type="GeoNE" StartNode="0" EndNode="3">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">1</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="32" Type="GeoNE" StartNode="4" EndNode="7">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">32</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="33" Type="GeoNE" StartNode="7" EndNode="10">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">33</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="2" Type="GeoNE" StartNode="13" EndNode="15">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">2</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="3" Type="GeoNE" StartNode="22" EndNode="25">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">3</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="4" Type="GeoNE" StartNode="33" EndNode="36">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">4</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="5" Type="GeoNE" StartNode="38" EndNode="41">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">5</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="6" Type="GeoNE" StartNode="45" EndNode="48">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">6</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="7" Type="GeoNE" StartNode="49" EndNode="52">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">7</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="8" Type="GeoNE" StartNode="74" EndNode="77">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">8</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="9" Type="GeoNE" StartNode="80" EndNode="83">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">9</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="10" Type="GeoNE" StartNode="84" EndNode="87">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">10</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="11" Type="GeoNE" StartNode="90" EndNode="93">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">11</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="12" Type="GeoNE" StartNode="94" EndNode="97">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">12</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="13" Type="GeoNE" StartNode="102" EndNode="105">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">13</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="14" Type="GeoNE" StartNode="108" EndNode="111">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">14</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="15" Type="GeoNE" StartNode="115" EndNode="118">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">15</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="16" Type="GeoNE" StartNode="121" EndNode="124">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">16</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="17" Type="GeoNE" StartNode="168" EndNode="171">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">17</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="18" Type="GeoNE" StartNode="181" EndNode="184">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">18</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="19" Type="GeoNE" StartNode="208" EndNode="211">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">19</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="20" Type="GeoNE" StartNode="224" EndNode="227">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">20</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="21" Type="GeoNE" StartNode="243" EndNode="246">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">21</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="22" Type="GeoNE" StartNode="251" EndNode="254">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">22</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="23" Type="GeoNE" StartNode="256" EndNode="259">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">23</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="24" Type="GeoNE" StartNode="263" EndNode="266">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">24</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="25" Type="GeoNE" StartNode="270" EndNode="272">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">25</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="26" Type="GeoNE" StartNode="277" EndNode="280">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">26</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="27" Type="GeoNE" StartNode="282" EndNode="285">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">27</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="28" Type="GeoNE" StartNode="287" EndNode="295">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">28</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="29" Type="GeoNE" StartNode="296" EndNode="299">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">29</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="30" Type="GeoNE" StartNode="299" EndNode="302">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">30</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="31" Type="GeoNE" StartNode="310" EndNode="315">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">31</Value>
+      </Feature>
+    </Annotation>
+  </AnnotationSet>
+  <AnnotationSet Name="Original markups">
+    <Annotation Id="0" Type="paragraph" StartNode="0" EndNode="316" />
+  </AnnotationSet>
+</GateDocument>

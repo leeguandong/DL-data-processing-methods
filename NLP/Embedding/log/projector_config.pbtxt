@@ -1,0 +1,4 @@
+embeddings {
+  tensor_name: "embeddings/Variable:0"
+  metadata_path: "F:\\Github\\DL-data-processing-methods\\NLP\\Embedding\\log\\metadata.tsv"
+}

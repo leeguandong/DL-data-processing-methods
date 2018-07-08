@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+    <maxid>4</maxid>
+    <login username="pytest" passwd='123456'>
+        <caption>Python</caption>
+        <item id="4">
+            <caption>测试</caption>
+        </item>
+    </login>
+    <item id="2">
+        <caption>Zope</caption>
+    </item>
+</catalog>

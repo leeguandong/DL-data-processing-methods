@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+  <branch name="codingpy.com" hash="1cdf045c">
+    text,source
+  </branch>
+  <branch name="release01" hash="f200013e">
+    <sub-branch name="subrelease01">
+      xml,sgml
+    </sub-branch>
+  </branch>
+  <branch name="invalid">
+  </branch>
+</doc>

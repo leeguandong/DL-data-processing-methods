@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<GateDocument>
+  <GateDocumentFeatures>
+    <Feature>
+      <Name className="java.lang.String">gate.SourceURL</Name>
+      <Value className="java.lang.String">file:/</Value>
+    </Feature>
+    <Feature>
+      <Name className="java.lang.String">docNewLineType</Name>
+      <Value className="java.lang.String" />
+    </Feature>
+    <Feature>
+      <Name className="java.lang.String">MimeType</Name>
+      <Value className="java.lang.String">text/plain</Value>
+    </Feature>
+  </GateDocumentFeatures>
+  <TextWithNodes>
+    <Node id="0" />安宁温泉<Node id="4" />是<Node id="5" />昆明市郊<Node id="9" />旅游及疗养地。<Node id="16" />安宁温泉<Node id="20" />又名<Node id="22" />碧玉泉<Node id="25" />。<Node id="26" />安宁温泉<Node id="30" />位于<Node id="32" />昆明市<Node id="35" />西约40公里处的<Node id="43" />安宁县<Node id="46" />境内。<Node id="49" />安宁温泉<Node id="53" />温泉由众多泉眼组成，多数泉眼分布于<Node id="70" />螳螂川<Node id="73" />东北岸，在断裂带上的泉眼共计9个。<Node id="90" />安宁温泉<Node id="94" />泉水色碧而清澈，水温42～45℃，宜于沐浴。<Node id="116" />安宁温泉<Node id="120" />最大泉点位于<Node id="126" />温泉浴室<Node id="130" />外侧，在出水口的池塘上方有杨慎书“天下第一汤”石刻。<Node id="156" />安宁温泉<Node id="160" />泉水由池底成珠状串串溢出，热气腾腾，潺潺有声。<Node id="183" />安宁温泉<Node id="187" />主要成分为碳酸盐，除供沐浴外，可饮用及治疗疾病。<Node id="211" />安宁温泉<Node id="215" />温泉周围修建有庭园别墅、宾馆饭店，附近有螳螂川南岸名刹——<Node id="244" />曹溪寺<Node id="247" />和<Node id="248" />珍珠泉<Node id="251" />等名胜古迹。<Node id="257" /></TextWithNodes>
+  <AnnotationSet>
+    <Annotation Id="1" Type="GeoNE" StartNode="0" EndNode="4">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">1</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="10" Type="GeoNE" StartNode="5" EndNode="9">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">10</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="2" Type="GeoNE" StartNode="16" EndNode="20">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">2</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="11" Type="GeoNE" StartNode="22" EndNode="25">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">11</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="3" Type="GeoNE" StartNode="26" EndNode="30">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">3</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="12" Type="GeoNE" StartNode="32" EndNode="35">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">12</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="13" Type="GeoNE" StartNode="43" EndNode="46">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">13</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="4" Type="GeoNE" StartNode="49" EndNode="53">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">4</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="14" Type="GeoNE" StartNode="70" EndNode="73">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">14</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="5" Type="GeoNE" StartNode="90" EndNode="94">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">5</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="6" Type="GeoNE" StartNode="116" EndNode="120">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">6</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="15" Type="GeoNE" StartNode="126" EndNode="130">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">15</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="7" Type="GeoNE" StartNode="156" EndNode="160">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">7</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="8" Type="GeoNE" StartNode="183" EndNode="187">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">8</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="9" Type="GeoNE" StartNode="211" EndNode="215">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">9</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="16" Type="GeoNE" StartNode="244" EndNode="247">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">16</Value>
+      </Feature>
+    </Annotation>
+    <Annotation Id="17" Type="GeoNE" StartNode="248" EndNode="251">
+      <Feature>
+        <Name className="java.lang.String">id</Name>
+        <Value className="java.lang.String">17</Value>
+      </Feature>
+    </Annotation>
+  </AnnotationSet>
+  <AnnotationSet Name="Original markups">
+    <Annotation Id="0" Type="paragraph" StartNode="0" EndNode="257" />
+  </AnnotationSet>
+</GateDocument>
