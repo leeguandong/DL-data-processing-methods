@@ -1,0 +1,13 @@
+编写自己的层
+对于简单、无状态的自定义操作，你也许可以通过 layers.core.Lambda 层来实现，但是对于那些包含了可训练权重的自定义层，需要我们自己去实现。
+
+在 keras 中，自定义层需要实现三个操作：
+build(input_shape): 这是定义权重的地方，这个地方必须设 self.built = True，可以通过调用 super([Layer], self).build() 完成。
+call(x): 这里是编写层的功能逻辑的地方。你只需要关注传入 call 的第一个参数：输入张量，除非你希望你的层支持 masking。
+compute_output_shape(input_shape): 如果你的层更改了输入张量的形状，你应该在这里定义形状变化的逻辑，这让 Keras 能够自动推断各层的形状。
+
+
+
+
+
+

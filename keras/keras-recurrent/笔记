@@ -1,0 +1,31 @@
+Rnn 的输入, 3D张量，尺寸为( batch_size,timesteps,input_dim ),输出是连续的2D张量
+
+SimpleRNN 完全连接的 RNN ，其输出将被反馈到输入。
+
+GRU 门限循环单元网络
+
+LSTM
+
+ConvLSTM2D  类似于 LSTM ，但是输入变换和循环变换都是卷积的
+输入尺寸
+如果 data_format='channels_first'， 返回 5D 张量，尺寸为： (samples,time, channels, rows, cols)。
+如果 data_format='channels_last'， 返回 5D 张量，尺寸为： (samples,time, rows, cols, channels)。
+
+输出尺寸
+如果 return_sequences，
+如果 data_format='channels_first'， 返回 5D 张量，尺寸为： (samples, time, filters, output_row, output_col)。
+如果 data_format='channels_last'， 返回 5D 张量，尺寸为： (samples, time, output_row, output_col, filters)。
+否则，
+如果 data_format ='channels_first'， 返回 4D 张量，尺寸为： (samples, filters, output_row, output_col)。
+如果 data_format='channels_last'， 返回 4D 张量，尺寸为： (samples, output_row, output_col, filters)。
+o_row 和 o_col 依赖于过滤器的尺寸和填充。
+
+GRUCell GRU 层的单元类
+
+LSTMCell
+
+StackedRNNcells  允许将一堆 RNN 单元表现为一个单元的封装器，用于实现高效堆叠的 RNN
+
+CuDNNGRU 由 CuDNN 支持的快速 GRU 实现
+
+CuDNNLSTM 由CuDNN支持的快速 LSTM 实现
