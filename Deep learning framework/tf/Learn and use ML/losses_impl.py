@@ -16,5 +16,6 @@ def _safe_mean(losses,num_present):
     pass
 
 def _num_present(losses,weights,per_batch=False):
+    pass
 
 
