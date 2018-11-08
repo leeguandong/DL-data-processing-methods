@@ -3,6 +3,7 @@ from keras import backend as K
 from keras.engine.topology import Layer
 import numpy as np
 
+
 class MyLayer(Layer):
     def __init__(self, output_dim, **kwargs):
         self.output_dim = output_dim

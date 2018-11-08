@@ -1,0 +1,86 @@
+https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247491127&idx=1&sn=9897b560cb0350e8ece0f61b3dc461c4&chksm=fbe9a7f8cc9e2eee30e0a2d7f062f8c89de041c265ec6b81ea4108770a9a5d5ace8bea1b6f98&scene=38#wechat_redirect
+
+Tensorflow 是用于表示某种类型的计算图的框架。上我们用的是 python 操作 tensorflow 时，我们用 python 代码做的第一件事就是
+组装计算图。之后我们的第二个任务就是与它进行交互。但重要的是，要记住计算图不在变量内部，它处在全局命名空间内。
+
+##
+什么是计算图？
+它实质上是一个全局数据结构，是一个有向图，捕获有关计算方法的指令
+
+tf.constant(2)
+返回的是一个 tf.Tensor 对象，它是一个指向我们刚创建的节点的指针。
+
+每次我们调用 tf.constant 的时候，我们都会在图中创建一个新节点。即便节点在功能上与现有节点完全相同，即使我们将节点重新分配给同
+一个变量，甚至我们根本没有将其分配给变量，结果都一样。
+相反，如果创建一个变量并将其设置为与现有节点相等，则只需将该指针复制到该节点，并且不会像该图添加任何内容。
+
++ 操作在 tf 中过载，所以同时添加两个张量会在图中增加一个节点，two_node 指向包含2的节点，three_node 指向包含3的节点，而sum_node
+指向包括 + 的节点，计算图只包括计算步骤，不包含结果。
+
+##
+tf.Session( )
+session 的作用是处理内存分配和优化，使我们能够实际执行由图形指定的计算。可以将计算图想象为我们想要执行的计算的模板：它列出了所有的
+步骤。为了使用这个图标，我们还需要发起一个会话，它使我们能够实际地完成任务。
+例如：遍历模板的所有节点来分配一组用于存储计算输出的存储器。
+为了使用 tf 进行各种计算，我们既需要图也需要会话
+
+会话包含一个指向全局图的指针，该指针通过指向所有节点的指针不断更新。这意味着在创建节点之前还是之后创建会话都无所谓。
+
+创建会话对象后，可以使用 sess.run(node) 返回节点的值，并且 Tensorflow 将执行确定该值所需的所有计算。
+
+一般来说，sess.run()调用往往是醉的 tf 瓶颈之一，所以调用它的次数越来越好。可以的话在一个sess.run()调用中返回多个项目，而不是进行多个调用。
+
+##
+占位符和 feed_dict
+没有机会获得输入，所以他们总是输出相同的东西。一个实用的应用可能涉及构建这样一个计算图：它接受输入，以某种方式处理它，并返回一个输出。
+最直接的方式可以使用占位符 tf.placeholder 。占位符是一种用于接受外部输入的节点。
+给 tf.placeholder 赋值的属性是 feed_dict
+
+计算路径
+当我们在依赖于图中其他节点的节点上调用sess.run()时，我们也需要计算这些节点的值。如果这些节点时依赖关系，那么我们需要计算这些值，直到计算图
+的'顶端'，也就是所有的节点都没有前置节点的情况。
+根据图的结构，我们不需要计算所有的节点也可以评估我们想要的节点！因为我们不需要评估 placeholder_node 来评估其他节点
+
+tf 仅通过必须的节点自动路由计算这一事实是它的巨大优势。如果计算图非常大并且有许多不必要的节点，它就能节约大量运行时间。
+它允许我们构建大型的'多用途'图形，这些图形使用单个共享的核心节点集合根据采用的计算路径来做不同的任务。
+
+##
+变量
+'无祖先'节点：tf.constant(每次运行都一样)和 tf.placeholder(每次运行都不一样)，还有第三种节点，通常情况下具有相同的值，但也可以更信息成新值。
+模型的参数就是变量。在训练期间，你希望通过梯度下降在每个步骤中更新参数，但在计算中，你希望保持参数不变，并将大量不同的测试输入集传到模型中。模型所有
+的可训练参数很有可能就是变量。
+
+tf.get_variable(name,shape) 的前两个参数是必须的，其余是可选的
+name是唯一标识这个变量对象的字符串。shape是一个与张量形状相对应的整数数组，比如[3,8],如果创建标量的话，使用空列表作为形状。
+
+一个变量节点在首次创建时，它的值基本就是 null,任何尝试对它进行计算的操作都会抛出这个异常。我们只能先给他赋值再做计算。
+有两种主要的方式用于变量赋值：初始化器和 tf.assign()
+
+tf.assign
+import tensorflow as tf
+count_variable = tf.get_variable('count',[])
+zero_node = tf.conatant(0.)
+assign_node = tf.assign(count_variable,zero_node)
+sess = tf.Session()
+sess.run(assign_node)
+print(sess.run(count_variable))
+
+初始化器
+import tensorflow as tf
+const_init_node = tf.constant_initializer(0.)
+conut_variable = tf.get_variable('count',[],initializer=const_init_node)
+# 特殊节点，init=tf.global_variables_initializer().将在其创建时查看全局图，自动将依赖关系添加到图中每一个 tf.initializer
+# 当我们调用 sess.run(init)时，他会告诉每个初始化器完成他们的任务，初始化变量
+init = tf.global_variables_initializer()
+
+调试使用 tf.Print 是 tf 中的一个节点
+
+
+
+
+
+
+
+
+
+
