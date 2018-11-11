@@ -1,0 +1,5 @@
+打包 exe
+pyinstaller -F rose.py
+
+打包安卓 apk
+https://python-for-android.readthedocs.io/en/latest/old_toolchain/examples/
