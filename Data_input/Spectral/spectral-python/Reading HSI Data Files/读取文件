@@ -1,0 +1,19 @@
+http://www.spectralpython.net/
+
+The SpyFile Interface
+SpyFile是读取HSI的base class
+
+高光谱数据可能非常大，因此首次创建 SpyFile 对象时，只从文件中读取元数据。
+仅仅通过 SpyFile 方法特别请求时才读取图像数据值
+
+Loading Entire Images
+SpyFile对象根据需要读取数据不缓存，通过行列下表去读取数据，这样做是为了避免在处理非常大的图像文件时消耗太多的内存。当执行仅需要读取大图像中的一小部分
+(例如，读取RGB以显示图像)的操作时，它还改善了性能，按需读取数据时而不缓存数据的缺点时，在运行需要访问所有数据的算法时，可能会有明显的运行时间损失，
+如果算法需要迭代访问数据，性能将更差。
+
+File Formats Supported
+ENVI headers
+AVIRIS 成像光谱仪
+ERDAS/Lan
+
+

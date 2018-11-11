@@ -1,0 +1,8 @@
+SPY实现了各种用于降维和监督和无监督分类的算法。这些算法中的一些在计算上是繁重的并且需要迭代访问图像数据，如果将这些图像数据加载到存储器中，这些算法几乎总是执行的更快。因此，如果计算
+机有足够的内存，则应将图像加载到内存中
+
+分类器包括：
+GaussianClassifier
+Maha lanobisDistanceClassifirt
+PerceptronClassifirt
+
