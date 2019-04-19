@@ -1,0 +1,1 @@
+建议安装3.3.0.10版本的contrib，更高版本的contrib里面专利保护了SIFT和SURF. 请执行 pip install opencv-contrib-python==3.3.0.10
