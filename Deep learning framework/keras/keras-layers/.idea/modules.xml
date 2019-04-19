@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Data_input.iml" filepath="$PROJECT_DIR$/.idea/Data_input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/keras-layers.iml" filepath="$PROJECT_DIR$/.idea/keras-layers.iml" />
     </modules>
   </component>
 </project>
